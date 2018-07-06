@@ -1,13 +1,11 @@
 class CreateMovies < ActiveRecord::Migration
   def change
     create_table :costume_stores do |t|
-      t.string :name
-      t.string :location
-      t.integer :costume_inventory
-      t.integer :num_of_employees
-      t.boolean :still_in_business
-      t.datetime :start_time
-      t.datetime :end_time
+      t.string :title
+      t.string :release_date
+      t.integer :director
+      t.integer :lead
+      t.boolean :theatres
+     end
     end
   end
-end
